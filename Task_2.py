@@ -6,7 +6,10 @@ def get_numbers_ticket(min, max, quantity):
     try:
         random_numb = random.randint(min, max)
         unique_numbers = random.sample(range(random_numb), quantity)
-        return print(unique_numbers)
+        if min < 1 and max > 1000:
+            print("You've entered number out of range, min is 1, and maximum is 1000")
+        else:
+            return print(unique_numbers)
     except Exception as e:
         print(f"An error occured: {e}")
     
