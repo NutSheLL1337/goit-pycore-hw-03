@@ -1,13 +1,20 @@
 from datetime import datetime
 
+
 def get_upcoming_birthdays(users):
-    birthday_this_year = datetime.strptime(users["birthday"], "%Y.%m.%d").date()
     today = datetime.today().date()
     for user in users:
-        difference_days = today - birthday_this_year
-        if birthday_this_year < today
-            
-    return print(difference_days)
+        birthday_this_year = datetime.strptime(user["birthday"], "%Y.%m.%d").date()
+    weekends = datetime.today().weekday() # if weekday 6 or 5 we transfer to 0
+    
+    # for user in users:
+    #     difference_days = today - birthday_this_year
+    #     name = 
+    #     congratulation_date = 
+    #    # if birthday_this_year < today
+    return print(today, weekends)
+    #return users[{"name": ""}, {"congratulation_date": ""}]
+
 
 users = [
     {"name": "John Doe", "birthday": "1985.01.23"},
