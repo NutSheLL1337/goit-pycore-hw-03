@@ -30,12 +30,10 @@ def get_upcoming_birthdays(users):
     return upcoming_birthdays
 
 users = [
-    {"name": "Alice", "birthday": "1990.07.02"},
-    {"name": "Bob", "birthday": "1985.07.03"},  
+    {"name": "John ", "birthday": "1990.07.02"},
+    {"name": "Jane", "birthday": "1985.07.03"},  
     {"name": "Charlie", "birthday": "1992.07.08"}, 
     {"name": "David", "birthday": "1980.07.09"}, 
-    {"name": "Eve", "birthday": "1995.07.10"},  
-    {"name": "Frank", "birthday": "1991.07.04"},
 ]
 
 upcoming_birthdays = get_upcoming_birthdays(users)
