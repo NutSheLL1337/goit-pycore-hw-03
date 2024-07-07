@@ -14,9 +14,10 @@ def normalize_phone(phone_number: str) -> str:
                 normalized_number = '+' + normalized_number
             else:
                 normalized_number = '+38' + normalized_number
-        # Якщо номер починається з '+', але не містить '38' після '+'
+        # Якщо номер починається з '+', але не має '38' після '+'
         elif not re.search(r'^\+38', normalized_number):
             normalized_number = '+38' + normalized_number[1:]
+            
         return normalized_number   
     except Exception as e:
         print(f"An error occured: {e}")
